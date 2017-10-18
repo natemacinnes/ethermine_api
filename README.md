@@ -49,6 +49,7 @@ EthermineApi::Pool.credits(base_url: 'http://api.ethpool.org')
 ```ruby
 EthermineApi::Pool.blocks_history
 # => #<OpenStruct status="OK", data=[#<OpenStruct time=1508212736, nbrBlocks=15, difficulty=1469986226066083>, #<OpenStruct time=1508216246, nbrBlocks=76, difficulty=1498157811667782>, #<OpenStruct time=1508219985, nbrBlocks=65, difficulty=1495924338718297>, #<OpenStruct time=1508223454, nbrBlocks=77, difficulty=1470413115601682>, #<OpenStruct time=1508227187, nbrBlocks=65, difficulty=1460372702365663>, #<OpenStruct time=1508230751, nbrBlocks=70, difficulty=1460910425240631>, #<OpenStruct time=1508234363, nbrBlocks=75, difficulty=1456608509189655>, #<OpenStruct time=1508237945, nbrBlocks=67, difficulty=1423382928506978>, #<OpenStruct time=1508241532, nbrBlocks=52, difficulty=1425447900135137>, #<OpenStruct time=1508245190, nbrBlocks=63, difficulty=1400461436689854>, #<OpenStruct time=1508248720, nbrBlocks=76, difficulty=1410667703939148>, #<OpenStruct time=1508252389, nbrBlocks=71, difficulty=1409925035518444>, #<OpenStruct time=1508255870, nbrBlocks=71, difficulty=1389940935574532>, #<OpenStruct time=1508259561, nbrBlocks=77, difficulty=1407629306676071>, #<OpenStruct time=1508263181, nbrBlocks=61, difficulty=1399384875766905>, #<OpenStruct time=1508266793, nbrBlocks=69, difficulty=1393112908301133>, #<OpenStruct time=1508270344, nbrBlocks=85, difficulty=1390290461807211>, #<OpenStruct time=1508273983, nbrBlocks=78, difficulty=1404529417941880>, #<OpenStruct time=1508277469, nbrBlocks=67, difficulty=1407907030026226>, #<OpenStruct time=1508281198, nbrBlocks=76, difficulty=1424382704053059>, #<OpenStruct time=1508284770, nbrBlocks=79, difficulty=1442483911584531>, #<OpenStruct time=1508288359, nbrBlocks=70, difficulty=1435421392397694>, #<OpenStruct time=1508291898, nbrBlocks=76, difficulty=1433857401029767>, #<OpenStruct time=1508295581, nbrBlocks=58, difficulty=1433133675561812>, #<OpenStruct time=1508298258, nbrBlocks=62, difficulty=1426020651269258>]>
+```
 
 #### Network Stats
 
@@ -84,7 +85,7 @@ EthermineApi::Miner.payouts(id: <miner hash>)
 
 ```ruby
 EthermineApi::Miner.rounds(id: <miner hash>)
-# => #<OpenStruct status="OK", data=[#<OpenStruct time=1508212800, reportedHashrate=0, currentHashrate=223833333.33333334, validShares=193, invalidShares=0, staleShares=13, averageHashrate=255819830.24691355, activeWorkers=3>, #<OpenStruct time=1508213400, reportedHashrate=0, currentHashrate=223111111.1111111, validShares=193, invalidShares=0, staleShares=12, averageHashrate=255527777.77777773, activeWorkers=3>, #<OpenStruct time=1508214000, reportedHashrate=0, currentHashrate=228666666.6666667, validShares=198, invalidShares=0, staleShares=12, averageHashrate=255189429.01234564, activeWorkers=3>,
+# => #<OpenStruct status="OK", data=[#<OpenStruct time=1508212800, reportedHashrate=0, currentHashrate=223833333.33333334, validShares=193, invalidShares=0, staleShares=13, averageHashrate=255819830.24691355, activeWorkers=3>, #<OpenStruct time=1508213400, reportedHashrate=0, currentHashrate=223111111.1111111, validShares=193, invalidShares=0, staleShares=12, averageHashrate=255527777.77777773, activeWorkers=3>, #<OpenStruct time=1508214000, reportedHashrate=0, currentHashrate=228666666.6666667, validShares=198, invalidShares=0, staleShares=12, averageHashrate=255189429.01234564, activeWorkers=3>,...]>
 ```
 
 #### Settings
@@ -97,8 +98,7 @@ EthermineApi::Miner.settings(id: <miner hash>)
 
 ```ruby
 EthermineApi::Miner.stats(id: <miner hash>)
-# => #<OpenStruct status="OK", data=#<OpenStruct time=1508299200, lastSeen=1508299199, reportedHashrate=0, currentHashrate=261666666.66666666, validShares=229, invalidShares=0, staleS│107 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will hares=10, averageHashrate=206439927.73261067, activeWorkers=3, unpaid=366918340027796600, unconfirmed=nil, coinsPerMin=2.4173574397324627e-05, usdPerMin=0.007394696408141603, btcPerM│    allow you to experiment.
-in=1.3510610730664735e-06>>
+# => #<OpenStruct status="OK", data=#<OpenStruct time=1508300400, lastSeen=1508300391, reportedHashrate=0, currentHashrate=253166666.66666666, validShares=222, invalidShares=0, staleShares=9, averageHashrate=207042908.762421, activeWorkers=3, unpaid=367761185780908740, unconfirmed=nil, coinsPerMin=2.4266033723587824e-05, usdPerMin=0.007550619053431588, btcPerMin=1.3637510952656358e-06>>
 ```
 
 ### Worker
@@ -107,7 +107,7 @@ in=1.3510610730664735e-06>>
 
 ```ruby
 EthermineApi::Worker.all(miner_id: <miner hash>)
-#  => #<OpenStruct status="OK", data=[#<OpenStruct worker="bitty-balls", time=1508299200, lastSeen=1508299195, reportedHashrate=0, currentHashrate=123611111.1111111, validShares=108, invalidShares=0, staleShares=5, averageHashrate=130379629.62962958>, #<OpenStruct worker="bitty-booge", time=1508299200, lastSeen=1508299157, reportedHashrate=0, currentHashrate=111055555.55555555, validShares=98, invalidShares=0, staleShares=3, averageHashrate=89804783.95061725>, #<OpenStruct worker="bitty-boosh", time=1508299200, lastSeen=1508299199, reportedHashrate=0, currentHashrate=27000000, validShares=23, invalidShares=0, staleShares=2, averageHashrate=27170524.69135802>]>
+# => #<OpenStruct status="OK", data=[#<OpenStruct worker="bitty-balls", time=1508299200, lastSeen=1508299195, reportedHashrate=0, currentHashrate=123611111.1111111, validShares=108, invalidShares=0, staleShares=5, averageHashrate=130379629.62962958>, #<OpenStruct worker="bitty-booge", time=1508299200, lastSeen=1508299157, reportedHashrate=0, currentHashrate=111055555.55555555, validShares=98, invalidShares=0, staleShares=3, averageHashrate=89804783.95061725>, #<OpenStruct worker="bitty-boosh", time=1508299200, lastSeen=1508299199, reportedHashrate=0, currentHashrate=27000000, validShares=23, invalidShares=0, staleShares=2, averageHashrate=27170524.69135802>]>
 ```
 
 #### Individual Historical Worker Statistics
