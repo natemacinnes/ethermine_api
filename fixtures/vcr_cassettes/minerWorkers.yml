@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.ethermine.org/miner/703a08bd7ee10d5f34950527ea957afd818e82a7/workers
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 18 Oct 2017 00:29:25 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=db58aab8e25c26ed068d2b32d0321aa471508286565; expires=Thu, 18-Oct-18
+        00:29:25 GMT; path=/; domain=.ethermine.org; HttpOnly
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Ratelimit-Limit:
+      - '100'
+      X-Ratelimit-Remaining:
+      - '97'
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=120
+      Etag:
+      - W/"28f-HhA4kpQY1YoWD9SFxXG5Y1J47no"
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3af7621afd9d920c-EWR
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"OK","data":[{"worker":"bitty-balls","time":1508286000,"lastSeen":1508285995,"reportedHashrate":0,"currentHashrate":118055555.55555555,"validShares":103,"invalidShares":0,"staleShares":5,"averageHashrate":128274647.88732386},{"worker":"bitty-booge","time":1508286000,"lastSeen":1508285986,"reportedHashrate":0,"currentHashrate":95833333.33333333,"validShares":83,"invalidShares":0,"staleShares":5,"averageHashrate":86929783.95061728},{"worker":"bitty-boosh","time":1508286000,"lastSeen":1508285992,"reportedHashrate":0,"currentHashrate":33666666.666666664,"validShares":29,"invalidShares":0,"staleShares":2,"averageHashrate":24534428.79499217}]}'
+    http_version: 
+  recorded_at: Wed, 18 Oct 2017 00:29:25 GMT
+recorded_with: VCR 3.0.3

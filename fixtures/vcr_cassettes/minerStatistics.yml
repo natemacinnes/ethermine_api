@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.ethermine.org/miner/703a08bd7ee10d5f34950527ea957afd818e82a7/currentStats
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 18 Oct 2017 00:34:31 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=db16d7aaaec0e28f53b103c9cb4baa8ef1508286870; expires=Thu, 18-Oct-18
+        00:34:30 GMT; path=/; domain=.ethermine.org; HttpOnly
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Ratelimit-Limit:
+      - '100'
+      X-Ratelimit-Remaining:
+      - '91'
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=120
+      Etag:
+      - W/"17e-ulQY1fxTeZKJYmHIeCGxhcGunp8"
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3af7698e7dbf91b2-EWR
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"OK","data":{"time":1508286600,"lastSeen":1508286591,"reportedHashrate":0,"currentHashrate":252388888.8888889,"validShares":220,"invalidShares":0,"staleShares":11,"averageHashrate":207878952.1228546,"activeWorkers":3,"unpaid":360562059249128900,"unconfirmed":null,"coinsPerMin":0.000024037560177154124,"usdPerMin":0.00756101455372383,"btcPerMin":0.0000013660545448676688}}'
+    http_version: 
+  recorded_at: Wed, 18 Oct 2017 00:34:31 GMT
+recorded_with: VCR 3.0.3

@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.ethermine.org/miner/703a08bd7ee10d5f34950527ea957afd818e82a7/settings
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 18 Oct 2017 00:31:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d4724b5705746051725f2a3aa2f2e8e9e1508286716; expires=Thu, 18-Oct-18
+        00:31:56 GMT; path=/; domain=.ethermine.org; HttpOnly
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Ratelimit-Limit:
+      - '100'
+      X-Ratelimit-Remaining:
+      - '95'
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"20-H3hK+JIpn9hLQFogpRG3cg4tPZc"
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3af765c72b411864-EWR
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"OK","data":"NO DATA"}'
+    http_version: 
+  recorded_at: Wed, 18 Oct 2017 00:31:56 GMT
+recorded_with: VCR 3.0.3

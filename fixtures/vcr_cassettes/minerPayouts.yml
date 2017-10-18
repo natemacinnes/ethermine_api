@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.ethermine.org/miner/703a08bd7ee10d5f34950527ea957afd818e82a7/payouts
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 18 Oct 2017 00:31:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d8a58ba4dc684ffea6815df1f0e7887871508286716; expires=Thu, 18-Oct-18
+        00:31:56 GMT; path=/; domain=.ethermine.org; HttpOnly
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Ratelimit-Limit:
+      - '100'
+      X-Ratelimit-Remaining:
+      - '94'
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=120
+      Etag:
+      - W/"294-QEuLqX+Rn6texQjanFoxeHCLcCw"
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3af765c85e64215c-EWR
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"OK","data":[{"start":4246675,"end":4342309,"amount":1000144114602165800,"txHash":"0x376914aba43724b4637bfac6c0ba3d852f01de6ac9e82f988d8e9663e1f52475","paidOn":1507307206},{"start":4157914,"end":4246641,"amount":1000300147302413600,"txHash":"0xeb92d2762a20b7e6ff46ad8f63aeec36227c2674fd0d6da5920b8e22fe261e92","paidOn":1504755124},{"start":4099637,"end":4157883,"amount":1000299829170798700,"txHash":"0x36d380088e9a236a9900aaec0c8e54b3237344071afc79ea394aa63a4cfd1d6f","paidOn":1502740295},{"start":3976116,"end":4099603,"amount":1000219294965464200,"txHash":"0x669907742afefae8c00cc4c2e086caf9890f1efa787ca7b109370465dc45167a","paidOn":1501505905}]}'
+    http_version: 
+  recorded_at: Wed, 18 Oct 2017 00:31:56 GMT
+recorded_with: VCR 3.0.3

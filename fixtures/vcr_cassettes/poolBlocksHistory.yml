@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.ethermine.org/blocks/history
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 17 Oct 2017 16:47:05 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d4448dd2f7b8e721e3462b625a0d334111508258825; expires=Wed, 17-Oct-18
+        16:47:05 GMT; path=/; domain=.ethermine.org; HttpOnly
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Ratelimit-Limit:
+      - '100'
+      X-Ratelimit-Remaining:
+      - '98'
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=300
+      Etag:
+      - W/"670-oQF+tEh48neOz+j9Gg4ov3Mz4ic"
+      Apicache-Store:
+      - redis
+      Apicache-Version:
+      - 0.8.7
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3af4bcd8ebae3fb3-YUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"OK","data":[{"time":1508173116,"nbrBlocks":6,"difficulty":1500851769972565},{"time":1508176754,"nbrBlocks":71,"difficulty":1490565102661709},{"time":1508180255,"nbrBlocks":63,"difficulty":1485411233184469},{"time":1508183963,"nbrBlocks":69,"difficulty":1482345151336005},{"time":1508187588,"nbrBlocks":67,"difficulty":1472940408912663},{"time":1508191076,"nbrBlocks":83,"difficulty":1498876631868662},{"time":1508194764,"nbrBlocks":67,"difficulty":1521695354212893},{"time":1508198352,"nbrBlocks":73,"difficulty":1511254695943273},{"time":1508201976,"nbrBlocks":79,"difficulty":1525952028552532},{"time":1508205494,"nbrBlocks":76,"difficulty":1528069500244988},{"time":1508209183,"nbrBlocks":65,"difficulty":1514605530994033},{"time":1508212736,"nbrBlocks":71,"difficulty":1487401995078489},{"time":1508216246,"nbrBlocks":76,"difficulty":1498157811667782},{"time":1508219985,"nbrBlocks":65,"difficulty":1495924338718297},{"time":1508223454,"nbrBlocks":77,"difficulty":1470413115601682},{"time":1508227187,"nbrBlocks":65,"difficulty":1460372702365663},{"time":1508230751,"nbrBlocks":70,"difficulty":1460910425240631},{"time":1508234363,"nbrBlocks":75,"difficulty":1456608509189655},{"time":1508237945,"nbrBlocks":67,"difficulty":1423382928506978},{"time":1508241532,"nbrBlocks":52,"difficulty":1425447900135137},{"time":1508245190,"nbrBlocks":63,"difficulty":1400461436689854},{"time":1508248720,"nbrBlocks":76,"difficulty":1410667703939148},{"time":1508252389,"nbrBlocks":71,"difficulty":1409925035518444},{"time":1508255870,"nbrBlocks":71,"difficulty":1389940935574532},{"time":1508258708,"nbrBlocks":59,"difficulty":1398048656259070}]}'
+    http_version: 
+  recorded_at: Tue, 17 Oct 2017 16:47:04 GMT
+recorded_with: VCR 3.0.3

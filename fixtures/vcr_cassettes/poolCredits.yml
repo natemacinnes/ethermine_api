@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.ethermine.org/credits
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 17 Oct 2017 16:43:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=ddf8c78a1926c0b66b87dc33264c31c261508258624; expires=Wed, 17-Oct-18
+        16:43:44 GMT; path=/; domain=.ethermine.org; HttpOnly
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Ratelimit-Limit:
+      - '100'
+      X-Ratelimit-Remaining:
+      - '99'
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=300
+      Etag:
+      - W/"19-WVDTMPv25dUzWZ/slI5TgF2IHgo"
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3af4b7f04de53f89-YUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"OK","data":[]}'
+    http_version: 
+  recorded_at: Tue, 17 Oct 2017 16:43:43 GMT
+recorded_with: VCR 3.0.3

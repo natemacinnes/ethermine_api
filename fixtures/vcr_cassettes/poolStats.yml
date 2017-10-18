@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.ethermine.org/poolStats
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 15 Oct 2017 18:54:13 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=df5b3dc0fdccf69dc8541a61694f96dcc1508093653; expires=Mon, 15-Oct-18
+        18:54:13 GMT; path=/; domain=.ethermine.org; HttpOnly
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Ratelimit-Limit:
+      - '100'
+      X-Ratelimit-Remaining:
+      - '99'
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=300
+      Etag:
+      - W/"75e-ZsE0Dy75sVWmWELDatCn43VWlWo"
+      Apicache-Store:
+      - redis
+      Apicache-Version:
+      - 0.8.7
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3ae4fc55bc323fdd-YUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"OK","data":{"minedBlocks":[{"number":4368733,"miner":"a564fb0e9955c078de73dd087ae9ac92fcbc37af","time":1508093566},{"number":4368730,"miner":"d060904aa97c021ec31c8a502a8b2443f51a38bd","time":1508093522},{"number":4368725,"miner":"558d2E1a5786848DFC24080AfF7928dA1c7D5C3a","time":1508093365},{"number":4368720,"miner":"22819dc76677906abb0a6a52b5d2616db5b963e7","time":1508093248},{"number":4368719,"miner":"fe11f84D3f16b5d3c498f21EdA7F0ceF433317a1","time":1508093239},{"number":4368719,"miner":"c7b6eaaf6ac19e52b6e15850e42c505f5a172e99","time":1508093234},{"number":4368716,"miner":"a07d590a6ac54193431c659606f4e5fb34111c96","time":1508093048},{"number":4368709,"miner":"3d158e5171a170d2928e7ab784ce16784f09064e","time":1508092927},{"number":4368708,"miner":"bb04a16fbdac6025d400fef8b8391e2c7be86f79","time":1508092891},{"number":4368707,"miner":"350A47Bd78B1E2809B79bedb783b35C0785E9d0c","time":1508092868}],"topMiners":[{"miner":"f1b3e00955d7cbcde70f4337e333cd84da3a1c36","hashRate":336530666666.6667},{"miner":"d060904aa97c021ec31c8a502a8b2443f51a38bd","hashRate":251461333333.33334},{"miner":"362c89a6d8a1597ff41eb03e1e897d0d95827c54","hashRate":135889388888.88887},{"miner":"a65f825e4f82c26aee244512cba7add256bc0788","hashRate":129276222222.22234},{"miner":"91d9479bcccc4580bd50e01013c4c698f6501541","hashRate":103267888888.88889},{"miner":"b7b03ce91e5826bd8d223b15dedbdb8ef4ddd4a8","hashRate":83082500000},{"miner":"482f7753b3d62c7d1fd0fdcb8fcc2d61704dfced","hashRate":80281833333.33331},{"miner":"58801ebec6685d0d5461a30999fa5df91549a59e","hashRate":79580277777.77768},{"miner":"43739fbedc4bef32829e6091a671d3237fb737db","hashRate":63216444444.44444},{"miner":"ccbd08939e32564544827f37d6f65282ca2bae61","hashRate":59486944444.44445}],"poolStats":{"hashRate":26477276722223.74,"miners":62918,"workers":212810,"blocksPerHour":30.54},"price":{"usd":328.18,"btc":0.05952}}}'
+    http_version: 
+  recorded_at: Sun, 15 Oct 2017 18:54:13 GMT
+recorded_with: VCR 3.0.3
