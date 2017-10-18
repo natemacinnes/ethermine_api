@@ -1,7 +1,7 @@
 RSpec.describe EthermineApi::Pool do
   it "gives back basic pool stats" do
     VCR.use_cassette('poolStats') do
-      pool_stats = EthermineApi::Pool.pool_stats
+      pool_stats = EthermineApi::Pool.stats
       expect(pool_stats).not_to be nil
       expect(pool_stats.status).to eq "OK"
 

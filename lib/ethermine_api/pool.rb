@@ -1,7 +1,7 @@
 module EthermineApi
   class Pool
     class << self
-      def pool_stats options={}
+      def stats options={}
         DefaultParser.parse(
           EthermineApi.connection(options[:base_url]).call("poolStats")
         )
